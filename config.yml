@@ -1,4 +1,4 @@
-baseURL: 'http://example.org/'
+baseURL: 'https://syntax-cauliflower.netlify.app/'
 languageCode: en-us
 title: Ben Basten
 theme: PaperMod
@@ -52,7 +52,7 @@ params:
         - name: twitter
           url: "https://twitter.com/ben_basten2"
         - name: linkedin
-          url: "linkedin.com/in/ben-basten-8a1213158"
+          url: "https://linkedin.com/in/ben-basten-8a1213158"
         - name: github
           url: "https://github.com/ben-basten"
 
