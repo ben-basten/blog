@@ -1,5 +1,27 @@
 {{ define "main" }}
 
-    <h1>My 0010 cents</h1>
+    {{ $paginator := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
+    {{ if eq $paginator.PageNumber 1 }}
+    <div class="head">
+        <h1>My 0010 cents</h1>
+        <div class="subtitle">
+            <p>Hello world! My name is Ben, and I am a web developer, outdoor enthusiast, and cyclist.</p>
+            <p>Here are my musings about tech, books, the world, and more.</p>
+        </div>
+        {{ partial "socials" . }}
+    </div>
+
+    <h2 class="subheader">Recent posts</h2>
+    {{else}}
+    <div class="head">
+        <h1>My 0010 cents</h1>
+        {{ partial "socials" . }}
+    </div>
+    {{ end }}
+
+    {{ range $paginator.Pages }}
+        {{ partial "list-card" . }}
+    {{ end }}
+    {{ template "_internal/pagination.html" . }}
 
 {{ end }}

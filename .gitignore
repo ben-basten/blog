@@ -17,3 +17,6 @@
 # Hugo folders
 public/
 resources/_gen
+
+# IntelliJ
+.idea

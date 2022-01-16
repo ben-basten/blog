@@ -1,0 +1,22 @@
+div.archive {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-gap: 30px;
+
+  h2 {
+    color: $secondary-dark;
+  }
+
+  .archive-entry h3 {
+    margin-bottom: 0;
+  }
+
+  a, a:visited {
+    color: $primary-dark;
+    text-decoration: none;
+  }
+
+  @include mobile {
+    display: block;
+  }
+}

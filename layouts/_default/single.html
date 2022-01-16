@@ -1,6 +1,43 @@
 {{ define "main" }}
 
-    <h1>{{.Title}}</h1>
-    {{.Content}}
+    <div class="head">
+        {{ partial "breadcrumbs" . }}
+        <h1>{{.Title}}</h1>
+        <div class="subtitle">
+            {{ if .Params.date }}
+            <p>{{ .Date | time.Format (default "January 2, 2006" .Site.Params.DateFormat) }}</p>
+            {{ end }}
+            {{ if .Params.readTime }}
+            <p>&middot; {{.Params.readTime}}min read</p>
+            {{ end }}
+        </div>
+        {{ if .Params.showSocials }}
+            {{ partial "socials" . }}
+        {{ end }}
+    </div>
+    <div class="card single">
+        {{.Content}}
+        {{ partial "tags" . }}
+    </div>
+
+    {{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+    {{- if and (gt (len $pages) 1) (in $pages . ) }}
+    <ul class="pagination">
+        {{- with $pages.Next . }}
+        <li>
+            <a class="prev" href="{{ .Permalink }}">
+                <&nbsp;Next post
+            </a>
+        </li>
+        {{- end }}
+        {{- with $pages.Prev . }}
+        <li>
+            <a class="next" href="{{ .Permalink }}">
+                Previous post&nbsp;>
+            </a>
+        </li>
+        {{- end }}
+    </ul>
+    {{- end }}
 
 {{ end }}

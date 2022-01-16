@@ -1,3 +1,46 @@
-{{ define "main" }}
-<h1>archive</h1>
-{{ end }}
+
+{{- define "main" }}
+
+<header class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{- if .Description }}
+    <div class="post-description">
+        {{ .Description }}
+    </div>
+    {{- end }}
+</header>
+
+{{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+
+{{- if .Site.Params.ShowAllPagesInArchive }}
+{{- $pages = site.RegularPages }}
+{{- end }}
+
+{{- range $pages.GroupByPublishDate "2006" }}
+{{- if ne .Key "0001" }}
+<div>
+    <h2 class="subheader">
+        {{- replace .Key "0001" "" }} - {{ len .Pages }} posts
+    </h2>
+    {{- range .Pages.GroupByDate "January" }}
+    <div class="card archive">
+        <h2>{{- .Key }}<sup>&nbsp;&nbsp;{{ len .Pages }}</sup></h2>
+        <div class="archive-posts">
+            {{- range .Pages }}
+            {{- if eq .Kind "page" }}
+            <div class="archive-entry">
+                <h3 class="archive-entry-title">
+                    <a class="entry-link" href="{{ .Permalink }}">{{- .Title | markdownify }}</a>
+                </h3>
+                <p>{{ .Date | time.Format (default "January 2, 2006" .Site.Params.DateFormat) }}</p>
+            </div>
+            {{- end }}
+            {{- end }}
+        </div>
+    </div>
+    {{- end }}
+</div>
+{{- end }}
+{{- end }}
+
+{{- end }}{{/* end main */}}

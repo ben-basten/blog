@@ -1,7 +1,7 @@
 baseURL: 'https://syntax-cauliflower.netlify.app/'
 languageCode: en-us
 title: Ben Basten
-theme: paper
+paginate: 8
 
 menu:
     main:
@@ -15,9 +15,13 @@ menu:
           url: projects/
           weight: 2
         - name: Contact
-          url: contact
+          url: mailto:ben.basten@gmail.com
           weight: 4
           
 taxonomies:
     tag: tags
     technology: technologies
+
+params:
+  mainSections:
+    - posts

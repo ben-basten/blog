@@ -14,6 +14,10 @@ footer {
         text-shadow: 0 0 8px black;
     }
 
+    a {
+        color: $primary-light;
+    }
+
     @include mobile {
         width: 60%;
     }
