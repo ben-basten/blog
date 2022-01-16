@@ -12,4 +12,4 @@ I am a web and mobile application developer at HealthPartners with education in 
 
 ## My experience
 
-Check out [my resume](/docs/resume-2022.pdf)!
+Check out [my resume](/docs/resume-2022.pdf), or you can [find me on LinkedIn](https://linkedin.com/in/ben-basten-8a1213158)!

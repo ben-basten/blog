@@ -2,4 +2,21 @@
 
     <h1>My 0010 cents</h1>
 
+    {{ range where site.RegularPages "Type" "in" site.Params.mainSections }}
+
+        <div class="card">
+            <h2><a href="{{ .Permalink }}">{{.Params.Title}}{{ if .Params.draft }} [draft]{{ end }}</a></h2>
+            {{ if .Params.date }}
+            <p class="subtitle">{{ .Date | time.Format (default "January 2, 2006" .Site.Params.DateFormat) }}</p>
+            {{ end }}
+            {{ if .Params.description }}
+            <p>{{ .Params.description }}</p>
+            {{ else }}
+            <p>{{ .Summary }}</p>
+            {{ end }}
+            {{ partial "tags" . }}
+        </div>
+
+    {{ end }}
+
 {{ end }}

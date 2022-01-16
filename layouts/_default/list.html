@@ -1,6 +1,7 @@
 {{ define "main" }}
 
     <div class="head">
+        {{ partial "breadcrumbs" . }}
         <h1>{{.Title}}</h1>
     </div>
     {{ range .Paginator.Pages }}

@@ -2,6 +2,7 @@
 
 {{- if .Title }}
 <header class="page-header">
+    {{ partial "breadcrumbs" . }}
     <h1>{{ .Title }}</h1>
     {{- if .Description }}
     <div class="post-description">

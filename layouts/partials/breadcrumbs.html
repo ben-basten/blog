@@ -1,0 +1,15 @@
+<div class="breadcrumbs">
+    {{- $url := replace .Parent.Permalink (printf "%s" .Site.BaseURL) "" }}
+
+    {{- $scratch := newScratch }}
+    {{- range $index, $element := split $url "/" }}
+
+    {{- $scratch.Add "path" (printf "%s/" $element )}}
+    {{- $bc_pg := $.Site.GetPage ($scratch.Get "path") -}}
+
+    {{- if (and ($bc_pg) (gt (len . ) 0))}}
+    <p>Ben Basten > <a href="{{ $bc_pg.Permalink }}">{{ $bc_pg.Name }}</a></p>
+    {{- end }}
+
+    {{- end -}}
+</div>

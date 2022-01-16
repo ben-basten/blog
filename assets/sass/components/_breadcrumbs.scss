@@ -1,0 +1,8 @@
+// Breadcrumbs logic from https://git.io/hugopapermod
+
+div.breadcrumbs {
+  p, a, a:visited {
+    color: $primary-light;
+    margin: 0;
+  }
+}
