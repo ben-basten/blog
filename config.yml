@@ -15,7 +15,7 @@ menu:
           url: projects/
           weight: 2
         - name: Contact
-          url: contact
+          url: mailto:ben.basten@gmail.com
           weight: 4
           
 taxonomies:

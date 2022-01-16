@@ -11,6 +11,9 @@
             <p>&middot; {{.Params.readTime}}min read</p>
             {{ end }}
         </div>
+        {{ if .Params.showSocials }}
+            {{ partial "socials" . }}
+        {{ end }}
     </div>
     <div class="card single">
         {{.Content}}

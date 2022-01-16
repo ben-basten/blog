@@ -1,0 +1,15 @@
+div.icons {
+  a {
+    text-decoration: none;
+  }
+
+  svg {
+    width: 30px;
+    color: $primary-light;
+    margin-right: 7px;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}

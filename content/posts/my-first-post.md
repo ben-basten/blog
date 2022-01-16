@@ -8,7 +8,7 @@ ShowToc: false
 ShowBreadCrumbs: false
 ---
 
-Hello world!
+Hello world!<!--more-->
 
 ```java
 System.out.println("Hello world");

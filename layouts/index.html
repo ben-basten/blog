@@ -1,7 +1,15 @@
 {{ define "main" }}
 
-    <h1>My 0010 cents</h1>
+    <div class="head">
+        <h1>My 0010 cents</h1>
+        <div class="subtitle">
+            <p>Hello world! My name is Ben, and I am a web developer, outdoor enthusiast, and cyclist.</p>
+            <p>Here are my musings about tech, books, the world, and more.</p>
+        </div>
+        {{ partial "socials" . }}
+    </div>
 
+    <h2>Recent posts</h2>
     {{ range where site.RegularPages "Type" "in" site.Params.mainSections }}
 
         <div class="card">

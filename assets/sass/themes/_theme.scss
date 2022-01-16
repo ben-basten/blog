@@ -23,6 +23,12 @@ div.head {
         display: inline-block;
         color: $primary;
         margin: 0;
+        font-size: 1.2em;
+        line-height: 1;
+    }
+
+    div.icons {
+        margin-top:15px;
     }
 }
 
@@ -56,6 +62,7 @@ div.content {
         color: $primary-light;
         padding: 3px;
         border-radius: 5px;
+        overflow-x: scroll;
     }
 
     img {
@@ -88,8 +95,3 @@ h2 {
     }
 }
 
-@include mobile {
-    h1 {
-        text-align: center;
-    }
-}

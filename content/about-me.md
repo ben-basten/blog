@@ -1,7 +1,7 @@
 ---
 title: "About"
 description: ""
-ShowToc: false
+showSocials: true
 ShowBreadCrumbs: false
 ---
 ![portrait](/images/portrait.JPG/)
