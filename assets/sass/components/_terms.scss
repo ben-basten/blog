@@ -1,0 +1,41 @@
+ul.filters {
+    a {
+        text-decoration: none;
+        padding: 0 6px 0 6px;
+        border-radius: 7px;
+        border: 2px solid $secondary-dark;
+
+        &:hover {
+            text-decoration: none;
+            background-color: $secondary-dark;
+            color: $primary-light;
+        }
+    }
+}
+
+// For the taxonomy list page
+ul.terms-tags {
+    padding: 0;
+
+    li {
+        list-style-type: none;
+        display: inline-block;
+        margin-bottom: 15px;
+    }
+
+    a {
+        text-decoration: none;
+        padding: 5px 15px 5px 15px;
+        border-radius: 7px;
+        border: 2px solid $primary-light;
+        color: $primary-light;
+        font-size: 1.2em;
+        font-weight: bold;
+
+        &:hover {
+            text-decoration: none;
+            background-color: $primary;
+            color: $primary-dark;
+        }
+    }
+}

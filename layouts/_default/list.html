@@ -9,6 +9,8 @@
             {{ end }}
             {{ if .Params.description }}
                 <p>{{ .Params.description }}</p>
+            {{ else }}
+                <p>{{ .Summary }}</p>
             {{ end }}
             {{ if .Params.technologies }}
                 <ul class="filters">

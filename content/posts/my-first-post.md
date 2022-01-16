@@ -7,7 +7,7 @@ ShowToc: false
 ShowBreadCrumbs: false
 ---
 
-Just testing this out!
+Just testing this out! <!--more-->
 
 ```java
 System.out.println("hello world");
