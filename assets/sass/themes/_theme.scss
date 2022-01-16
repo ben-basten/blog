@@ -39,3 +39,9 @@ h2 {
         color: $primary-dark;
     }
 }
+
+@include mobile {
+    h1 {
+        text-align: center;
+    }
+}

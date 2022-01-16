@@ -13,6 +13,9 @@ nav {
         
         li {
             display: inline-block;
+        }
+
+        li + li {
             margin-left: 15px;
         }
     }
@@ -32,11 +35,20 @@ nav {
 
         text-align: center;
         font-size: 1.6em;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
 
-        ul li {
-            margin-left: 0;
+        div.home {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        ul {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 0;
         }
     }
 }
