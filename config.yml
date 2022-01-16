@@ -68,7 +68,7 @@ menu:
           url: search/
           weight: 10
         - name: About me
-          url: about/about-me
+          url: /about-me
           weight: 10
         - name: Portfolio
           url: projects/
