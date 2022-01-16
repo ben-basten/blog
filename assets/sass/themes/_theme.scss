@@ -89,6 +89,11 @@ h1 {
 h2 {
     margin: 0;
 
+    &.subheader {
+        margin-bottom: 15px;
+        color: $primary-light;
+    }
+
     a, a:visited {
         text-decoration: none;
         color: $primary-dark;
