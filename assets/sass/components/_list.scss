@@ -1,10 +1,10 @@
 .card {
-    background-color: $brown-light;
-    padding: 10px 30px 10px 30px;
+    background-color: $primary-light;
+    padding: 10px 30px 20px 30px;
     margin-bottom: 10px;
     border-radius: 10px;
 
-    color: $primary-accent;
+    color: $primary-dark;
 
     p {
         margin: 0;
@@ -24,7 +24,7 @@
             margin-right: 10px;
 
             a {
-                color: $red;
+                color: $secondary-dark;
             }
         }
     }

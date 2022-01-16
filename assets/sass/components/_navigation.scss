@@ -1,6 +1,11 @@
 nav {
     display: flex;
     justify-content: space-between;
+    font-weight: bolder;
+    font-size: 1.8em;
+    margin-left: 30px;
+    margin-right: 30px;
+    flex-flow: row wrap;
 
     ul {
         list-style-type: none;
@@ -15,11 +20,23 @@ nav {
     a {
         text-decoration: none;
 
-        color: $brown-light;
+        color: $primary-light;
 
         &.active {
-            color: $mustard;
-            border-bottom: 1px solid $mustard;
+            color: $primary;
+            border-bottom: 1px solid $primary;
+        }
+    }
+
+    @include mobile {
+
+        text-align: center;
+        font-size: 1.6em;
+        margin-left: auto;
+        margin-right: auto;
+
+        ul li {
+            margin-left: 0;
         }
     }
 }

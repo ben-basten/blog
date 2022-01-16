@@ -12,7 +12,7 @@
         height: 195px;
         right: 34px;
         bottom: 0;
-        background: $brown-light;
+        background: $primary-light;
     }
 
     svg {
@@ -23,7 +23,7 @@
         margin: 0 5px 0 5px;
 
         &:not(:hover) path{
-            fill: $brown-light;
+            fill: $primary-light;
         }
     }
 
