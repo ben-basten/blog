@@ -60,6 +60,13 @@
   {{- if (ne (.Param "hideSummary") true) }}
   <section class="entry-content">
     <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+    {{- if (.Params.technologies) }}
+    <ul class="post-tags">
+      {{- range .Params.technologies }}
+      <li><a href="/technologies/{{ . }}">{{ . }}</a></li>
+      {{- end }}
+    </ul>
+    {{- end }}
   </section>
   {{- end }}
   {{- if not (.Param "hideMeta") }}

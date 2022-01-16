@@ -36,9 +36,12 @@
   {{- end }}
 
   <footer class="post-footer">
-    {{- if .Params.tags }}
+    {{- if or (.Params.tags) (.Params.technologies) }}
     <ul class="post-tags">
       {{- range ($.GetTerms "tags") }}
+      <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+      {{- end }}
+      {{- range ($.GetTerms "technologies") }}
       <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
       {{- end }}
     </ul>

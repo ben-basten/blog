@@ -71,7 +71,7 @@ menu:
           url: about/about-me
           weight: 10
         - name: Portfolio
-          url: portfolio/
+          url: projects/
           weight: 10
           
 taxonomies:
