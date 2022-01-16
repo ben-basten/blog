@@ -1,7 +1,6 @@
 baseURL: 'https://syntax-cauliflower.netlify.app/'
 languageCode: en-us
 title: Ben Basten
-theme: paper
 paginate: 8
 
 menu:

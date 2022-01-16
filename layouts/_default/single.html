@@ -1,6 +1,19 @@
 {{ define "main" }}
 
-    <h1>{{.Title}}</h1>
-    {{.Content}}
+    <div class="head">
+        <h1>{{.Title}}</h1>
+        <div class="subtitle">
+            {{ if .Params.date }}
+            <p>{{ .Date | time.Format (default "January 2, 2006" .Site.Params.DateFormat) }}</p>
+            {{ end }}
+            {{ if .Params.readTime }}
+            <p>&middot; {{.Params.readTime}}min read</p>
+            {{ end }}
+        </div>
+    </div>
+    <div class="card single">
+        {{.Content}}
+        {{ partial "tags" . }}
+    </div>
 
 {{ end }}

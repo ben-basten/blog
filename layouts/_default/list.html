@@ -1,6 +1,8 @@
 {{ define "main" }}
 
-    <h1>{{.Title}}</h1>
+    <div class="head">
+        <h1>{{.Title}}</h1>
+    </div>
     {{ range .Paginator.Pages }}
         <div class="card">
             <h2><a href="{{ .Permalink }}">{{.Params.Title}}{{ if .Params.draft }} [draft]{{ end }}</a></h2>
@@ -12,19 +14,7 @@
             {{ else }}
                 <p>{{ .Summary }}</p>
             {{ end }}
-            {{ if .Params.technologies }}
-                <ul class="filters">
-                {{- range .Params.technologies }}
-                    <li><a href="/technologies/{{ . }}">#{{ . }}</a></li>
-                {{- end }}
-                </ul>
-            {{ else if .Params.tags }}
-                <ul class="filters">
-                {{- range .Params.tags }}
-                    <li><a href="/tags/{{ . }}">#{{ . }}</a></li>
-                {{- end }}
-                </ul>
-            {{ end }}
+            {{ partial "tags" . }}
         </div>
     {{ end }}
 

@@ -1,0 +1,13 @@
+{{ if .Params.technologies }}
+<ul class="filters">
+    {{- range .Params.technologies }}
+    <li><a href="/technologies/{{ . }}">#{{ . }}</a></li>
+    {{- end }}
+</ul>
+{{ else if .Params.tags }}
+<ul class="filters">
+    {{- range .Params.tags }}
+    <li><a href="/tags/{{ . }}">#{{ . }}</a></li>
+    {{- end }}
+</ul>
+{{ end }}
