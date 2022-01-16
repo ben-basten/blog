@@ -1,0 +1,47 @@
+body {
+    background-image: url('/images/topo-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: $background;
+
+    font-family: dubai, sans-serif;
+    font-size: 16px;
+
+    overflow-y: scroll;
+}
+
+div.content {
+    display: block;
+    width: 65%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mobile {
+        width: 95%;
+    }
+}
+
+h1 {
+    color: $primary;
+    font-weight: bolder;
+    text-shadow: 0 0 8px $primary-dark;
+    font-size: 3em;
+}
+
+h2 {
+    margin: 0;
+
+    a, a:visited {
+        text-decoration: none;
+        color: $primary-dark;
+    }
+}
+
+@include mobile {
+    h1 {
+        text-align: center;
+    }
+}

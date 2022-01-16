@@ -1,0 +1,31 @@
+.card {
+    background-color: $primary-light;
+    padding: 10px 30px 20px 30px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+
+    color: $primary-dark;
+
+    p {
+        margin: 0;
+
+        &.subtitle {
+            font-size: 12px;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 5px 0 0 0;
+
+        li {
+            display: inline-block;
+            margin-right: 10px;
+
+            a {
+                color: $secondary-dark;
+            }
+        }
+    }
+}

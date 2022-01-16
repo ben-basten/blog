@@ -1,8 +1,7 @@
 ---
 title: "Group Music Server"
-description: ""
+description: "An mp3 music server with listening rooms for multiple clients to join and listen to the same music. "
 technologies: ["react", "java"]
-ShowToc: false
 ShowBreadCrumbs: false
 draft: false
 ---

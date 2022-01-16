@@ -3,76 +3,20 @@ languageCode: en-us
 title: Ben Basten
 theme: paper
 
-
-enableRobotsTXT: true
-buildDrafts: false
-buildFuture: false
-buildExpired: false
-
-minify:
-    disableXML: true
-    minifyOutput: true
-
-params:
-    env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    title: ExampleSite
-    description: "ExampleSite description"
-    keywords: [Blog, Portfolio, PaperMod]
-    # images: ["<link or path of image for opengraph, twitter-cards>"]
-    DateFormat: "January 2, 2006"
-    defaultTheme: dark
-    disableThemeToggle: true
-
-    ShowReadingTime: false
-    ShowShareButtons: false
-    ShowPostNavLinks: true
-    ShowBreadCrumbs: true
-    ShowCodeCopyButtons: false
-    disableSpecial1stPost: false
-    disableScrollToTop: false
-    comments: false
-    hidemeta: false
-    hideSummary: false
-    showtoc: false
-    tocopen: false
-
-    assets:
-        favicon: "favicons/favicon.ico"
-        favicon16x16: "favicons/favicon.ico"
-        favicon32x32: "favicons/favicon.ico"
-        apple_touch_icon: "<link / abs url>"
-        safari_pinned_tab: "<link / abs url>"
-
-    # home-info mode
-    homeInfoParams:
-        Title: "My 0010 cents"
-        Content: Welcome to my blog
-
-    socialIcons:
-        - name: twitter
-          url: "https://twitter.com/ben_basten2"
-        - name: linkedin
-          url: "https://linkedin.com/in/ben-basten-8a1213158"
-        - name: github
-          url: "https://github.com/ben-basten"
-
 menu:
     main:
         - name: Archive
           url: archives
-          weight: 5
-        # - name: Tags
-        #   url: tags/
-        #   weight: 10
-        - name: Search
-          url: search/
-          weight: 10
-        - name: About me
-          url: about/about-me
-          weight: 10
-        - name: Portfolio
+          weight: 1
+        - name: About
+          url: about-me
+          weight: 3
+        - name: Projects
           url: projects/
-          weight: 10
+          weight: 2
+        - name: Contact
+          url: contact
+          weight: 4
           
 taxonomies:
     tag: tags

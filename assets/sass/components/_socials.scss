@@ -1,0 +1,41 @@
+.socials {
+    position: relative;
+
+    .icons {
+        position: fixed;
+        bottom: 203px;
+        text-align: center;
+    }
+
+    .line {
+        position: fixed;
+        height: 195px;
+        right: 34px;
+        bottom: 0;
+        background: $primary-light;
+    }
+
+    svg {
+        text-align: center;
+        height: auto;
+        padding-top: 5px;
+        width: 30px;
+        margin: 0 5px 0 5px;
+
+        &:not(:hover) path{
+            fill: $primary-light;
+        }
+    }
+
+    @include mobile {
+        .icons {
+            position: initial;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .line {
+            display: none;
+        }
+    }
+}

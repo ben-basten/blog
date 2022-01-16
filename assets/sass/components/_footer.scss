@@ -1,0 +1,20 @@
+footer {
+    color: $primary-light;
+    padding-top: 10px;
+    margin-top: 80px;
+    border-top: 2px solid $primary-light;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+
+    p {
+        font-size: .95rem;
+        text-align: center;
+        margin-top: 5px;
+        text-shadow: 0 0 8px black;
+    }
+
+    @include mobile {
+        width: 60%;
+    }
+}
