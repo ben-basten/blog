@@ -1,7 +1,7 @@
 baseURL: 'https://syntax-cauliflower.netlify.app/'
 languageCode: en-us
 title: Ben Basten
-theme: PaperMod
+theme: paper
 
 
 enableRobotsTXT: true
@@ -71,7 +71,7 @@ menu:
           url: about/about-me
           weight: 10
         - name: Portfolio
-          url: portfolio/
+          url: projects/
           weight: 10
           
 taxonomies:
