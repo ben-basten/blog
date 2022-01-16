@@ -13,14 +13,28 @@ ul.filters {
     }
 }
 
-// For the taxonomy list page
-ul.terms-tags {
+ul.terms-tags, ul.pagination {
     padding: 0;
+    user-select: none;
 
     li {
         list-style-type: none;
         display: inline-block;
         margin-bottom: 15px;
+
+        &.active a {
+            background-color: $primary;
+            color: $primary-dark;
+        }
+
+        &.disabled a {
+            border-color: gray;
+            color: gray;
+
+            &:hover {
+                background-color: initial;
+            }
+        }
     }
 
     a {

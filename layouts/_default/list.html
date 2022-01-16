@@ -1,7 +1,7 @@
 {{ define "main" }}
 
     <h1>{{.Title}}</h1>
-    {{ range .Pages }}
+    {{ range .Paginator.Pages }}
         <div class="card">
             <h2><a href="{{ .Permalink }}">{{.Params.Title}}{{ if .Params.draft }} [draft]{{ end }}</a></h2>
             {{ if .Params.date }}
@@ -27,5 +27,7 @@
             {{ end }}
         </div>
     {{ end }}
+
+{{ template "_internal/pagination.html" . }}
 
 {{ end }}
