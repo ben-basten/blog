@@ -1,0 +1,25 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        
+        li {
+            display: inline-block;
+            margin-left: 15px;
+        }
+    }
+
+    a {
+        text-decoration: none;
+
+        color: $brown-light;
+
+        &.active {
+            color: $mustard;
+            border-bottom: 1px solid $mustard;
+        }
+    }
+}

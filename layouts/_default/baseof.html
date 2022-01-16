@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preload" href="{{ $style.Permalink }}" as="style">
     <link rel="stylesheet" href="{{ $style.Permalink }}">
-    <title>Document</title>
+    <title>{{ if .IsHome }}{{ else }}{{ if .Title }}{{ .Title }} | {{ end }}{{ end }}{{ .Site.Title }}</title>
 </head>
 <body>
     {{- partial "navigation.html" . -}}

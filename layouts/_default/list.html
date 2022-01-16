@@ -1,3 +1,8 @@
 {{ define "main" }}
-<h1>list</h1>
+
+    <h1>list</h1>
+    {{ range .Pages }}
+        {{.Content}}
+    {{ end }}
+
 {{ end }}
