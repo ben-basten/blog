@@ -26,65 +26,32 @@
   display: table;
   padding: 3px 10px 3px 10px;
   font-size: 1.15rem;
-  border: 2px solid #d3b954;
+  border: 2px solid #D8973C;
   border-radius: 8px;
-  color: #d3b954; }
+  color: #D8973C; }
   .button a {
     color: inherit; }
     .button a:hover {
       text-decoration: none; }
   .button:hover {
     cursor: pointer;
-    background-color: #d3b954;
+    background-color: #D8973C;
     color: #49484d; }
 
 footer {
-  color: #aca383;
-  position: relative;
-  height: 120px;
+  color: #D8C99B;
   padding-top: 10px;
   margin-top: 20px;
-  border-top: 2px solid #aca383;
+  border-top: 2px solid #D8C99B;
   width: 70%;
   margin-left: auto;
   margin-right: auto; }
-  footer .credits {
-    text-align: center;
-    margin-top: 15px; }
   footer p {
     font-size: .95rem;
     text-align: center;
     margin-top: 5px;
     text-shadow: 0 0 8px black; }
-  footer img {
-    left: 0;
-    right: 0;
-    margin: auto;
-    position: absolute;
-    bottom: -5px;
-    width: 700px;
-    z-index: -1; }
-  footer .button {
-    display: inline-block; }
-  @media (max-width: 1140px) {
-    footer {
-      width: 80%; }
-      footer img {
-        width: 100%;
-        margin-bottom: 10px; } }
-.gallery {
-  columns: 3 200px;
-  column-gap: 15px; }
-  .gallery .image {
-    padding-bottom: 15px; }
-    .gallery .image img {
-      width: 100%; }
-  @media only screen and (max-width: 610px) {
-    .gallery {
-      columns: 1;
-      width: 80%;
-      margin-left: auto;
-      margin-right: auto; } }
+
 nav {
   display: flex;
   justify-content: space-between; }
@@ -96,38 +63,10 @@ nav {
       margin-left: 15px; }
   nav a {
     text-decoration: none;
-    color: #aca383; }
+    color: #D8C99B; }
     nav a.active {
-      color: #d3b954;
-      border-bottom: 1px solid #d3b954; }
-
-.page-title h1 {
-  color: #aca383;
-  letter-spacing: 5px;
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  font-size: 5rem;
-  position: fixed;
-  margin: 0;
-  left: -25px;
-  z-index: -2;
-  display: table;
-  height: auto;
-  top: 255px; }
-
-.page-title .line {
-  position: fixed;
-  left: 15px;
-  height: 125px; }
-
-@media only screen and (max-width: 610px) {
-  .page-title h1 {
-    writing-mode: initial;
-    text-orientation: initial;
-    letter-spacing: initial;
-    position: initial; }
-  .page-title .line {
-    display: none; } }
+      color: #D8973C;
+      border-bottom: 1px solid #D8973C; }
 
 .socials {
   position: relative; }
@@ -140,7 +79,7 @@ nav {
     height: 195px;
     right: 34px;
     bottom: 0;
-    background: #aca383; }
+    background: #D8C99B; }
   .socials svg {
     text-align: center;
     height: auto;
@@ -148,7 +87,7 @@ nav {
     width: 30px;
     margin: 0 5px 0 5px; }
     .socials svg:not(:hover) path {
-      fill: #aca383; }
+      fill: #D8C99B; }
   @media only screen and (max-width: 610px) {
     .socials .icons {
       position: initial;
@@ -156,6 +95,26 @@ nav {
       margin: 0 auto; }
     .socials .line {
       display: none; } }
+.card {
+  background-color: #D8C99B;
+  padding: 10px 30px 10px 30px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  color: #011638; }
+  .card p {
+    margin: 0; }
+    .card p.subtitle {
+      font-size: 12px; }
+  .card ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 5px 0 0 0; }
+    .card ul li {
+      display: inline-block;
+      margin-right: 10px; }
+      .card ul li a {
+        color: #931F1D; }
+
 body {
   background-image: url("/images/topo-bg.jpg");
   background-repeat: no-repeat;
@@ -167,25 +126,17 @@ body {
   font-size: 16px;
   overflow-y: scroll; }
 
-.page {
-  height: 99vh;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-areas: "header" "content" "footer"; }
-
-.page-middle {
-  display: grid;
-  grid-template-columns: 70px 1fr 70px;
-  grid-gap: 15px;
-  margin-top: 50px; }
+div.content {
+  display: block;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto; }
   @media only screen and (max-width: 610px) {
-    .page-middle {
-      grid-template-columns: 100%; } }
-.content {
-  display: grid; }
+    div.content {
+      width: 90%; } }
+h1 {
+  color: #D8C99B;
+  font-weight: bolder; }
 
-.line {
-  position: relative;
-  width: 3px;
-  background-color: #aca383;
-  z-index: -1; }
+h2 {
+  margin: 0; }

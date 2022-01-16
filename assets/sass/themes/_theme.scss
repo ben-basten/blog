@@ -12,36 +12,22 @@ body {
     overflow-y: scroll;
 }
 
-.page {
-    // slight scroll if 100vh
-    height: 99vh;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    grid-template-areas:
-    "header"
-    "content"
-    "footer";
-}
-
-// includes title sidebar, content, and socials sidebar
-.page-middle {
-    display: grid;
-    grid-template-columns: 70px 1fr 70px;
-    grid-gap: 15px;
-    margin-top: 50px;
+div.content {
+    display: block;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 
     @include mobile {
-        grid-template-columns: 100%;
+        width: 90%;
     }
 }
 
-.content {
-    display: grid;
+h1 {
+    color: $brown-light;
+    font-weight: bolder;
 }
 
-.line {
-    position: relative;
-    width: 3px;
-    background-color: $brown-light;
-    z-index: -1;
+h2 {
+    margin: 0;
 }

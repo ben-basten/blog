@@ -1,8 +1,7 @@
 ---
 title: "Compilers"
-description: ""
+description: "A collection of the projects done in my compilers course using Flex, Bison, and MIPS."
 technologies: ["flex", "bison", "C++"]
-ShowToc: false
 ShowBreadCrumbs: false
 draft: false
 ---

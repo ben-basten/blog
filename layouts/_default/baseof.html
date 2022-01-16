@@ -1,18 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    {{ $sass := resources.Get "sass/main.scss" }}
-    {{ $style := $sass | resources.ToCSS }}
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preload" href="{{ $style.Permalink }}" as="style">
-    <link rel="stylesheet" href="{{ $style.Permalink }}">
-    <title>{{ if .IsHome }}{{ else }}{{ if .Title }}{{ .Title }} | {{ end }}{{ end }}{{ .Site.Title }}</title>
-</head>
+    {{- partial "head.html" . -}}
 <body>
     {{- partial "navigation.html" . -}}
-    {{- block "main" . }}{{ end -}}
+    <div class="content">
+        {{- block "main" . }}{{ end -}}
+    </div>
     {{- partialCached "footer.html" . -}}
 </body>
 </html>

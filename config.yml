@@ -8,7 +8,7 @@ menu:
         - name: Archive
           url: archives
           weight: 1
-        - name: About me
+        - name: About
           url: about-me
           weight: 3
         - name: Projects
