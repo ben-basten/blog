@@ -1,0 +1,47 @@
+body {
+    background-image: url('/images/topo-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: $forest;
+
+    font-family: dubai, sans-serif;
+    font-size: 16px;
+
+    overflow-y: scroll;
+}
+
+.page {
+    // slight scroll if 100vh
+    height: 99vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+    "header"
+    "content"
+    "footer";
+}
+
+// includes title sidebar, content, and socials sidebar
+.page-middle {
+    display: grid;
+    grid-template-columns: 70px 1fr 70px;
+    grid-gap: 15px;
+    margin-top: 50px;
+
+    @include mobile {
+        grid-template-columns: 100%;
+    }
+}
+
+.content {
+    display: grid;
+}
+
+.line {
+    position: relative;
+    width: 3px;
+    background-color: $brown-light;
+    z-index: -1;
+}
