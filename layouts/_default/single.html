@@ -2,7 +2,7 @@
 
     <div class="head">
         {{ partial "breadcrumbs" . }}
-        <h1>{{.Title}}</h1>
+        <h1>{{.Title}}{{ if .Params.draft }}<sup> [draft]</sup>{{ end }}</h1>
         <div class="subtitle">
             {{ if .Params.date }}
             <p>{{ .Date | time.Format (default "January 2, 2006" .Site.Params.DateFormat) }}</p>

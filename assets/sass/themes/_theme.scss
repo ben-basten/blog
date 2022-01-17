@@ -75,6 +75,10 @@ div.content {
             font-size: 12px;
         }
     }
+
+    a, a:visited {
+        color: $primary-dark;
+    }
 }
 
 h1 {
