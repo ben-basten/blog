@@ -1,9 +1,11 @@
 {{ define "main" }}
 
     <div class="head">
+        {{ $pageTitle := .Title }}
         {{ partial "breadcrumbs" . }}
-        <h1>{{.Title}}</h1>
+        <h1>{{ range $taxonomyname, $taxonomy := .Site.Taxonomies.tags }}{{if in $taxonomyname $pageTitle}}#{{end}}{{end}}{{.Title}}</h1>
     </div>
+
     {{ range .Paginator.Pages }}
         {{ partial "list-card" . }}
     {{ end }}

@@ -1,10 +1,12 @@
-ul.filters {
+// Red filters for posts, in list view and in single view
+ul.post-tags {
     list-style-type: none;
     padding: 0;
     margin: 5px 0 0 0;
 
     li {
         display: inline-block;
+        margin-top: 7px;
     }
 
     a {
@@ -22,6 +24,7 @@ ul.filters {
     }
 }
 
+// Full-sized buttons for pagination and terms list
 ul.terms-tags, ul.pagination {
     padding: 0;
     user-select: none;
