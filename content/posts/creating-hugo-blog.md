@@ -3,7 +3,7 @@ title: "Starting a blog with Hugo... lots to learn!"
 date: 2022-01-16T21:25:15-05:00
 readTime: 3
 tags: ["podcast", "blog", "hugo"]
-draft: true
+draft: false
 ---
 
 The other day, I watched a YouTube presentation called ["Give Yourself a Blog for Christmas"](https://www.youtube.com/watch?v=NKHF5VZmCig&t=831s) 
