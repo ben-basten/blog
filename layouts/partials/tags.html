@@ -1,11 +1,11 @@
 {{ if .Params.technologies }}
-<ul class="filters">
+<ul class="post-tags">
     {{- range .Params.technologies }}
-    <li><a href="/technologies/{{ . }}">#{{ . }}</a></li>
+    <li><a href="/technologies/{{ . }}">{{ . }}</a></li>
     {{- end }}
 </ul>
 {{ else if .Params.tags }}
-<ul class="filters">
+<ul class="post-tags">
     {{- range .Params.tags }}
     <li><a href="/tags/{{ . }}">#{{ . }}</a></li>
     {{- end }}

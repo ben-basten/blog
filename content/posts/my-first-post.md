@@ -4,8 +4,6 @@ date: 2022-01-15T17:28:00-05:00
 description: ""
 tags: ["testing"]
 readTime: 5
-ShowToc: false
-ShowBreadCrumbs: false
 ---
 
 Hello world!<!--more-->
