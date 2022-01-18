@@ -19,13 +19,19 @@ div.head {
         margin: 0;
     }
 
-    div.subtitle p {
-        display: inline-block;
-        color: $primary;
-        margin: 0;
-        font-size: 1.2em;
-        line-height: 1;
-        margin-bottom:15px;
+    div.subtitle {
+        p {
+            display: inline-block;
+            color: $primary;
+            margin: 0;
+            font-size: 1.2em;
+            line-height: 1;
+            margin-bottom:15px;
+        }
+
+        a {
+            color: $primary;
+        }
     }
 }
 

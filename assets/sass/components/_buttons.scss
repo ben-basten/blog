@@ -36,7 +36,7 @@ ul.terms-tags, ul.pagination {
     li {
         list-style-type: none;
         display: inline-block;
-        margin-bottom: 15px;
+        margin: 0 3px 15px 0;
 
         &.active a {
             background-color: $primary;

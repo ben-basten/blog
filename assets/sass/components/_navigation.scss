@@ -18,22 +18,23 @@ nav {
         li + li {
             margin-left: 15px;
         }
+
+        a.active {
+            border-bottom: 2px solid $primary;
+        }
     }
 
     a {
         text-decoration: none;
-        padding: 0 8px 0 8px;
         color: $primary-light;
-        border-radius: $radius;
-        border: 2px solid transparent;
+        border-bottom: 2px solid transparent;
 
         &:hover {
-            border: 2px solid $primary-light;
+            border-bottom: 2px solid $primary-light;
         }
 
         &.active {
             color: $primary;
-            border: 2px solid $primary;
         }
     }
 

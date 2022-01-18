@@ -1,7 +1,7 @@
 <header class="header">
     <nav class="nav">
         <div class="home">
-            <a href='{{ "" | absLangURL }}'>
+            <a href='{{ "" | absLangURL }}' {{- if .Page.IsHome }} class="active" {{- end }}>
                 {{ .Site.Title }}
             </a>
         </div>
