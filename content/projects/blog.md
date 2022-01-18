@@ -2,6 +2,7 @@
 title: "Blog"
 description: "A blog/portfolio site built with Hugo."
 technologies: ["hugo"]
+repo: "https://github.com/ben-basten/blog"
 draft: false
 ---
 

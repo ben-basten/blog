@@ -10,6 +10,9 @@
             {{ if .Params.readTime }}
             <p>&middot; {{.Params.readTime}}min read</p>
             {{ end }}
+            {{ if .Params.repo }}
+                <a href="{{.Params.repo}}" target="_blank">view repo</a>
+            {{ end }}
         </div>
         {{ if .Params.showSocials }}
             {{ partial "socials" . }}
