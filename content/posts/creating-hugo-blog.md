@@ -44,7 +44,9 @@ But... there's nothing to see yet. You'll need to add a theme to make it look pr
 
 ## My learnings
 
-After generating my initial site, I quickly realized that this tool wouldn't be something that I could just look at and figure out right away. This [Hugo tutorial YouTube playlist](https://www.youtube.com/playlist?list=PLLAZ4kZ9dFpOnyRlyS-liKL5ReHDcj4G3) is what got me off the ground running. I'd recommend giving them a watch!
+After generating my initial site, I quickly realized that this tool wouldn't be something that I could just look at and figure out right away. This [Hugo tutorial YouTube playlist](https://www.youtube.com/playlist?list=PLLAZ4kZ9dFpOnyRlyS-liKL5ReHDcj4G3) is what got me off the ground running. I'd recommend giving them a watch! 
+
+This is by no means all-inclusive documentation, but here's a couple of helpful things that I wished I knew when I was getting started.
 
 ### There are 3 main types of pages
 
