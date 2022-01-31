@@ -13,3 +13,9 @@ Personal blog and project portfolio.
 
 1. `hugo` - add `--minify` option for minified output
 2. Static HTML can be found in the `public/` folder
+
+## Creating new content
+
+* Blog post: `hugo new posts/sampleTitle.md`
+* Portfolio entry: `hugo new projects/projectTitle.md`
+* Standalone page: `hugo new aboutMe.md`
