@@ -2,7 +2,7 @@
 title: "Starting a blog with Hugo... lots to learn!"
 date: 2022-01-16T21:25:15-05:00
 readTime: 5
-tags: ["podcast", "blog", "hugo"]
+tags: ["podcast", "documentation", "hugo"]
 draft: false
 ---
 

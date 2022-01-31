@@ -16,6 +16,8 @@ Personal blog and project portfolio.
 
 ## Creating new content
 
-* Blog post: `hugo new posts/sampleTitle.md`
-* Portfolio entry: `hugo new projects/projectTitle.md`
-* Standalone page: `hugo new aboutMe.md`
+_Note: sticking to the hyphenated file naming convention will automatically generate the correct blog title by replacing the hyphens with spaces._
+
+* Blog post: `hugo new posts/Sample-Title.md`
+* Portfolio entry: `hugo new projects/Project-Title.md`
+* Standalone page: `hugo new About-Me.md`
