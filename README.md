@@ -13,3 +13,11 @@ Personal blog and project portfolio.
 
 1. `hugo` - add `--minify` option for minified output
 2. Static HTML can be found in the `public/` folder
+
+## Creating new content
+
+_Note: sticking to the hyphenated file naming convention will automatically generate the correct blog title by replacing the hyphens with spaces._
+
+* Blog post: `hugo new posts/Sample-Title.md`
+* Portfolio entry: `hugo new projects/Project-Title.md`
+* Standalone page: `hugo new About-Me.md`
