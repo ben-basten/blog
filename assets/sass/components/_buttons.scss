@@ -16,14 +16,14 @@ ul.post-tags {
         border: 2px solid $secondary-dark;
         color: $secondary-dark;
 
+        &:visited {
+            color: $secondary-dark;
+        }
+
         &:hover {
             text-decoration: none;
             background-color: $secondary-dark;
             color: $primary-light;
-        }
-
-        &:visited {
-            color: $secondary-dark;
         }
     }
 }
