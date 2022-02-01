@@ -1,7 +1,7 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-readTime: 5
+readTime: 
 tags: [""]
 draft: true
 ---

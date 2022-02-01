@@ -1,7 +1,7 @@
 ---
 title: "Stop for the Sunrise"
 date: 2022-01-31T11:53:45-05:00
-readTime: 5
+readTime: 2
 tags: ["self-love", "sunrise"]
 draft: false
 ---
