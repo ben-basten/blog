@@ -8,7 +8,7 @@ draft: false
 
 ![sunrise-ice.jpg](/images/posts/sunrise-ice.jpg)
 
-Sometimes I need to slow down and remind myself to appreciate the little things - like the sun rising/setting every single day. <!--more-->
+Sometimes I need to slow down and remind myself to appreciate the little things - like the sun rising/setting every single day. 
 
 Over the last couple of weeks, I've been feeling a little down. Whether it's from the short winter days, stress about making big decisions, what's going on in the news, or just being exhausted from work, I feel like I don't spend always spend enough time appreciating the little things that make me smile. 
 
