@@ -4,7 +4,7 @@ description: ""
 showSocials: true
 ShowBreadCrumbs: false
 ---
-![portrait](/images/portrait.JPG/)
+![portrait](/images/portrait.jpg/)
 
 ## Who I am
 
